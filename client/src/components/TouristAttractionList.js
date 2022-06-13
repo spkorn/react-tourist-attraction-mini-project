@@ -60,6 +60,7 @@ function TouristAttratctionList(props) {
                       key={index}
                       css={css`
                         margin-left: 3px;
+                        cursor: pointer;
                       `}
                       onClick={() => {
                         addKeywordtoSearchText(tag);
@@ -72,6 +73,9 @@ function TouristAttratctionList(props) {
                 <span>{" และ "}</span>
                 <span
                   className="tags-choose"
+                  css={css`
+                    cursor: pointer;
+                  `}
                   onClick={() => {
                     addKeywordtoSearchText(destination.tags.slice(-1));
                   }}
